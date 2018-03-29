@@ -17,6 +17,18 @@ strong{
   color: #404040;
 }
 
+.title{
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+
+.text{
+  margin-top: .5rem;
+  line-height: 1.5rem;
+}
+
 /* Header Section*/
 
 header{
@@ -91,8 +103,80 @@ li{
   color: white;
 }
 
-/* About Section */
+/* About Section Main Left */
 
 .about{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
   background-color: #F7F7F7;
+}
+
+.about-main{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-main img{
+  width: 70%;
+}
+
+.lg-title{
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  margin-top: 2rem;
+}
+
+.about p{
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+  width: 70%;
+}
+
+.about-quote{
+  font-weight: bolder;
+}
+
+/* About Section Side Right */
+
+.about-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-left: .0125rem solid #A0A0A0;
+}
+
+.about-our{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: .0125rem solid #A0A0A0;
+}
+
+.about-our img{
+  height: auto;
+  width: 30%;
+  padding: 1rem;
+}
+
+.our-img{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.readmore{
+  margin-top: 1.5rem;
+}
+
+.readmore a{
+  color: #0000FF;
+}
+
+.lecture{
+  background-color: #E0E0E0;
+  border-left: .0125rem solid #A0A0A0;
 }
