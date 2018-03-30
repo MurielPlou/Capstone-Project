@@ -22,6 +22,12 @@
         <li><a href="#" target="_blank">Our companies</a></li>
         <li><a href="#" target="_blank">Sign in</a></li>
       </ul>
+
+      <ul class="mobile-navbar">
+        <li><a href="#" target="_blank"><img src="resources/images/ic-on-campus.svg" alt="school desk icon"/></a></li>
+        <li><a href="#" target="_blank"><img src="resources/images/ic-online.svg" alt="computer icon"/></a></li>
+        <li><a href="#" target="_blank"><img src="resources/images/ic-login.svg" alt="person icon"/></a></li>
+      </ul>
   </header>
 
 <!--- Banner Section -->
@@ -51,7 +57,8 @@
 
    <div class="column-side">
      <div class="small-box">
-       <img src="resources/images/information-orientation.jpg" alt="Students walking on campus" />
+       <img id="img-desktop" src="resources/images/information-orientation.jpg" alt="Students walking on campus" />
+       <img id="img-mobile" src="resources/images/information-orientation-mobile.jpg" alt="Students walking on campus" />
          <div class="box-text">
            <span class="title">Orientation date</span>
            <span class="text">Tue 10/11 & Wed 10/12: 8am-3pm</span>
@@ -60,7 +67,8 @@
      </div>
 
      <div class="small-box">
-       <img src="resources/images/information-campus.jpg" alt="Students studying in classroom" />
+       <img id="img-desktop" src="resources/images/information-campus.jpg" alt="Students studying in classroom" />
+       <img id="img-mobile" src="resources/images/information-campus-mobile.jpg" alt="Students studying in classroom" />
          <div class="box-text">
            <span class="title">Our campus</span>
            <span class="text">Find which campus is close by you</span>
@@ -69,7 +77,8 @@
      </div>
 
      <div class="small-box lecture">
-       <img src="resources/images/information-guest-lecture.jpg" alt="Image of lecturer Oliver Sack" />
+       <img id="img-desktop" src="resources/images/information-guest-lecture.jpg" alt="Image of lecturer Oliver Sack" />
+       <img id="img-mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Image of lecturer Oliver Sack" />
          <div class="box-text">
            <span class="title">Our guest lecture</span>
            <span class="text">Join a keynote with Oliver Sack about music in medical
@@ -85,6 +94,7 @@
   <div class="learn">
     <h1>Start Learning</h1>
   <div class="learn-boxes">
+    <span class="mobile-title">Software engineering</span>
     <div class="learn-img">
       <img src="resources/images/course-software.jpg" alt="Apple computer on desk with lamp" />
       <div class="learn-box">
@@ -93,7 +103,7 @@
         <p class="text">Web Development Mobile Development, iOT, APIs</p>
       </div>
     </div>
-
+      <span class="mobile-title">Computer art</span>
     <div class="learn-img">
       <img src="resources/images/course-computer-art.jpg" alt="Hand holding smart phone" />
       <div class="learn-box">
@@ -104,6 +114,7 @@
       </div>
     </div>
 
+      <span class="mobile-title">Design</span>
     <div class="learn-img">
       <img src="resources/images/course-design.jpg" alt="Person holding antique camera" />
       <div class="learn-box">
@@ -113,6 +124,7 @@
       </div>
     </div>
 
+    <span class="mobile-title">Data</span>
     <div class="learn-img">
       <img src="resources/images/course-data.jpg" alt="Open laptop on glass desk" />
       <div class="learn-box">
@@ -122,6 +134,7 @@
       </div>
     </div>
 
+    <span class="mobile-title">Business</span>
     <div class="learn-img">
       <img src="resources/images/course-business.jpg" alt="Chess set with wood pieces" />
       <div class="learn-box">
@@ -131,6 +144,7 @@
       </div>
     </div>
 
+    <span class="mobile-title">Marketing</span>
     <div class="learn-img">
       <img src="resources/images/course-marketing.jpg" alt="Smart watch on person's wrist" />
       <div class="learn-box">
@@ -145,6 +159,11 @@
   <!--- Thesis Section -->
   <div class="thesis">
     <h1>Thesis exhibit</h1>
+    <div class="video-mobile">
+      <video autoplay muted loop>
+        <source src="resources/videos/thesis.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="thesis-container">
       <div class="column-main">
         <div class="video-container">

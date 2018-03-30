@@ -20,7 +20,7 @@ strong{
 
 .title{
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bolder;
   letter-spacing: 0.05em;
 }
@@ -58,6 +58,44 @@ header{
 
 li{
   margin-right: 1rem;
+}
+
+.mobile-navbar{
+  display: none;
+}
+
+/* Header CSS ruleset Mobiles */
+
+@media only screen and (max-width: 600px){
+    /* ruleset for 320px - 480px */
+  .academy-text{
+    display: none;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .mobile-navbar{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+  }
+
+  .mobile-navbar img{
+    width: 3rem;
+    height: auto;
+  }
+
+  .academy-logo img{
+    width: 3rem;
+    height: auto;
+    margin-left: 1rem;
+  }
+
+  li{
+    margin-right: 4rem;
+  }
 }
 
 /* Banner Section */
@@ -106,6 +144,56 @@ li{
   color: white;
 }
 
+/* Banner CSS ruleset Mobiles */
+
+@media only screen and (max-width: 600px){
+    /* ruleset for 320px - 480px */
+
+    .banner{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    .banner img{
+     width: 100%;
+     height: auto;
+    }
+
+    .banner-text{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+
+    .banner-title{
+      margin-top: 1.5rem;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+
+    .banner-text p{
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .banner-button{
+      background-color: #404040;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 2rem;
+      align-self: center;
+    }
+
+    .banner-button a{
+      color: white;
+    }
+}
+
 /* About Section Main Left */
 
 .about{
@@ -138,6 +226,16 @@ li{
 .about-quote{
   font-weight: bolder;
 }
+
+/* About CSS ruleset Mobiles */
+
+@media only screen and (max-width: 600px){
+    /* ruleset for 320px - 480px */
+
+    .column-main{
+      display: none;
+    }
+  }
 
 /* About Section Side Right */
 
@@ -181,9 +279,51 @@ li{
 
 .lecture img{
   height: auto;
-  width: 28%;
+  width: 30%;
   padding: 2rem 1rem 2rem 1rem;
 }
+
+.mobile-img{
+  display: none;
+}
+
+#img-mobile{
+  display: none;
+}
+
+/* About Section Side Right CSS ruleset Mobiles */
+
+@media only screen and (max-width: 600px) and (max-resolution: 300dpi){
+    /* ruleset for 320px - 480px */
+
+    .column-side{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+      .small-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #img-desktop{
+      display: none;
+    }
+
+    #img-mobile{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .box-text{
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    }
 
 /* Learn Section */
 
@@ -228,7 +368,42 @@ h1{
   line-height: 3rem;
 }
 
+.mobile-title{
+  display: none;
+}
+
+/* Learn CSS ruleset Mobiles */
+
+@media only screen and (max-width: 600px){
+    /* ruleset for 320px - 480px */
+
+    .learn{
+      background-color: white;
+    }
+
+    .learn-img{
+      display: none;
+    }
+
+    .mobile-title{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      width: 100%;
+      background-color: #E0E0E0;
+      padding: 2rem 2.5rem 2rem 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
 /* Thesis Section */
+
+.video-mobile{
+  display: none;
+}
 
 .thesis{
   display: flex;
@@ -258,6 +433,30 @@ h1{
   padding: 2rem 1rem 2rem 1rem;
 }
 
+/* Thesis CSS ruleset Mobiles */
+
+@media only screen and (max-width: 600px){
+    /* ruleset for 320px - 480px */
+
+    .thesis-container{
+      display: none;
+    }
+
+    .thesis{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .thesis .video-mobile{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
 /* Footer Section */
 
 footer{
@@ -276,3 +475,18 @@ footer{
   flex-direction: row;
   margin-right: 1.5rem;
 }
+
+/* Footer CSS ruleset Mobiles */
+
+@media only screen and (max-width: 600px){
+    /* ruleset for 320px - 480px */
+
+    footer{
+      padding: 3rem 1.5rem 0rem 1.5rem;
+    }
+
+      .footer-bar{
+      display: none;
+    }
+
+  }
