@@ -60,6 +60,10 @@ li{
   margin-right: 1rem;
 }
 
+.navbar a:hover {
+  color: #E0E0E0;
+}
+
 .mobile-navbar{
   display: none;
 }
@@ -144,6 +148,10 @@ li{
   color: white;
 }
 
+.banner-button:hover {
+  background-color: #778899;
+}
+
 /* Banner CSS ruleset Mobiles */
 
 @media only screen and (max-width: 600px){
@@ -187,10 +195,6 @@ li{
       padding-bottom: 1rem;
       margin-top: 2rem;
       align-self: center;
-    }
-
-    .banner-button a{
-      color: white;
     }
 }
 
@@ -271,6 +275,10 @@ li{
 
 .readmore a{
   color: #0000FF;
+}
+
+.readmore a:hover {
+  color: #778899;
 }
 
 .lecture{
@@ -474,6 +482,10 @@ footer{
   display: flex;
   flex-direction: row;
   margin-right: 1.5rem;
+}
+
+.footer-bar a:hover {
+  color: #E0E0E0;
 }
 
 /* Footer CSS ruleset Mobiles */
