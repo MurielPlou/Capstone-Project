@@ -28,6 +28,27 @@ strong{
 .text{
   margin-top: .5rem;
   line-height: 2rem;
+  margin-left: 2rem;
+}
+
+.large-display{
+  width: 70%;
+  height: auto;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.md-img{
+  width: 100%;
+  height: auto;
+}
+
+.side-img{
+  width: 35%;
+  height: auto;
 }
 
 /* Header Section*/
@@ -107,23 +128,22 @@ li{
 banner{
   display: flex;
   background-color: #E0E0E0;
-  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
   width: 100%;
-  align-items: center;
   flex-wrap: wrap;
 }
 
-banner img{
- width: 58.5%;
- margin-right: 1.5rem;
+.ban-contain{
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 2rem 4rem 1.5rem;
 }
 
 .banner-text{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 25%;
-  margin-left: 1.5rem;
+  align-items: flex-start;
+  width: 40%;
+  margin-left: 2.5rem;
 }
 
 .banner-title{
@@ -204,15 +224,14 @@ banner img{
   display: flex;
   align-items: flex-start;
   width: 100%;
-  padding: 2.5rem 1.5rem 4rem 1.5rem;
   background-color: #F7F7F7;
 }
 
 .column-main{
   display: flex;
   flex-direction: column;
-  width: 60%;
   margin-right: 1.5rem;
+  padding: 2.5rem 1.5rem 4rem 1.5rem;
 }
 
 .lg-title{
@@ -222,7 +241,14 @@ banner img{
   margin-top: 2rem;
 }
 
-.about p{
+.text{
+  margin-top: 1.5rem;
+  line-height: 2rem;
+  width: 70%;
+  margin-left: 0rem;
+}
+
+.column-main p{
   margin-top: 1.5rem;
   line-height: 2rem;
 }
@@ -247,26 +273,26 @@ banner img{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 40%;
   margin-left: 1.5rem;
+  padding: 2.5rem 1.5rem 4rem 1.5rem;
 }
 
 .small-box{
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin:
 }
 
 .small-box img{
-  height: auto;
-  width: 35%;
-  padding: 0rem 1rem 2.5rem 1rem;
+  padding: 0rem 4rem 1rem 1rem;
 }
 
 .box-text{
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-left: 2rem;
 }
 
 .readmore{
@@ -285,17 +311,11 @@ banner img{
   background-color: #E0E0E0;
 }
 
-.lecture img{
-  height: auto;
-  width: 30%;
-  padding: 2rem 1rem 2rem 1rem;
-}
-
 .mobile-img{
   display: none;
 }
 
-#img-mobile{
+.img-mobile{
   display: none;
 }
 
@@ -315,13 +335,14 @@ banner img{
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 2rem;
     }
 
-    #img-desktop{
+    .img-desktop{
       display: none;
     }
 
-    #img-mobile{
+    .img-mobile{
       display: block;
       width: 100%;
       height: auto;
@@ -331,7 +352,8 @@ banner img{
       width: 100%;
       margin-bottom: 3rem;
     }
-    }
+  }
+
 
 /* Learn Section */
 
@@ -419,7 +441,10 @@ h1{
   align-items: center;
   width: 100%;
   background-color: #F7F7F7;
-  padding: 2.5rem 1.5rem 4rem 1.5rem;
+}
+
+.thesis h1{
+  margin: 2rem 0rem 2rem 0rem;
 }
 
 .thesis-container{
@@ -432,14 +457,9 @@ h1{
 .column-main video{
   width: 100%;
   height: auto;
-  margin: 1.75rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 2rem 0rem;
 }
 
-.fisma img{
-  height: auto;
-  width: 28%;
-  padding: 2rem 1rem 2rem 1rem;
-}
 
 /* Thesis CSS ruleset Mobiles */
 

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="resources/css/stylesheet:reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/stylesheet.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Roboto:300,500,700" rel="stylesheet">
@@ -17,6 +18,7 @@
       <img src="resources/images/ic-logo.svg" alt="Colmar Lion Logo" />
       <span class="academy-text" aria-label="College name"><strong>COLMAR</strong>ACADEMY</span>
     </div>
+    <nav>
       <ul class="navbar" role="presentation" aria-label="Navigation for website">
         <li><a href="#" target="_blank">On campus</a></li>
         <li><a href="#" target="_blank">Online</a></li>
@@ -29,16 +31,21 @@
         <li><a href="#" target="_blank"><img src="resources/images/ic-online.svg" alt="computer icon"/></a></li>
         <li><a href="#" target="_blank"><img src="resources/images/ic-login.svg" alt="person icon"/></a></li>
       </ul>
+    </nav>
   </header>
 
 <!--- Banner Section -->
 
   <banner>
-    <img src="resources/images/banner.jpg" alt="Students seated reading outdoors on wood table" />
+    <div class="ban-contain">
+    <div class="large-display">
+      <img src="resources/images/banner.jpg" alt="Students seated reading outdoors on wood table" />
+    </div>
     <div class="banner-text" role="presentation">
         <span class="banner-title">Learn something new everyday</span>
           <p role="complementary">Lorem ipsum dolor sit amet, apeirian necessit his.</p>
             <span class="banner-button"><a href="#" target="_blank">Start here</a></span>
+    </div>
     </div>
   </banner>
 
@@ -46,9 +53,11 @@
 
 <div class="about" role="presentation">
   <div class="column-main">
-    <img src="resources/images/information-main.jpg" alt="Student reading outdoors on park bench" />
+    <div class="large-display">
+      <img src="resources/images/information-main.jpg" alt="Student reading outdoors on park bench" />
+    </div>
       <span class="lg-title">It doesn't hurt to keep practicing</span>
-        <p role="complementary">"Sit ei rebum sanctus consequuntur, dicit prodesset argumentum per an,
+        <p class="text" role="complementary">"Sit ei rebum sanctus consequuntur, dicit prodesset argumentum per an,
           vel te erat efficiantur. Dicam patrioque constituam et sed, nam eu veri
           disputando. Repudiare incorrupte intellegam ei nec. Nnominati democritum
           conclusionemque vel te."
@@ -58,8 +67,10 @@
 
    <div class="column-side">
      <div class="small-box">
-       <img id="img-desktop" src="resources/images/information-orientation.jpg" alt="Students walking on campus" />
-       <img id="img-mobile" src="resources/images/information-orientation-mobile.jpg" alt="Students walking on campus" />
+       <div class="side-img">
+         <img class="img-desktop" src="resources/images/information-orientation.jpg" alt="Students walking on campus" />
+       </div>
+       <img class="img-mobile" src="resources/images/information-orientation-mobile.jpg" alt="Students walking on campus" />
          <div class="box-text">
            <span class="title">Orientation date</span>
            <span class="text" role="complementary">Tue 10/11 & Wed 10/12: 8am-3pm</span>
@@ -68,8 +79,10 @@
      </div>
 
      <div class="small-box" role="presentation">
-       <img id="img-desktop" src="resources/images/information-campus.jpg" alt="Students studying in classroom" />
-       <img id="img-mobile" src="resources/images/information-campus-mobile.jpg" alt="Students studying in classroom" />
+       <div class="side-img">
+         <img class="img-desktop" src="resources/images/information-campus.jpg" alt="Students studying in classroom" />
+       </div>
+       <img class="img-mobile" src="resources/images/information-campus-mobile.jpg" alt="Students studying in classroom" />
          <div class="box-text">
            <span class="title">Our campus</span>
            <span class="text" role="complementary">Find which campus is close by you</span>
@@ -78,8 +91,10 @@
      </div>
 
      <div class="small-box lecture" role="presentation">
-       <img id="img-desktop" src="resources/images/information-guest-lecture.jpg" alt="Image of lecturer Oliver Sack" />
-       <img id="img-mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Image of lecturer Oliver Sack" />
+       <div class="side-img">
+         <img class="img-desktop" src="resources/images/information-guest-lecture.jpg" alt="Image of lecturer Oliver Sack" />
+       </div>
+       <img class="img-mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Image of lecturer Oliver Sack" />
          <div class="box-text">
            <span class="title" role="complementary">Our guest lecture</span>
            <span class="text">Join a keynote with Oliver Sack about music in medical
@@ -97,7 +112,9 @@
   <div class="learn-boxes">
     <span class="mobile-title">Software engineering</span>
     <div class="learn-img">
-      <img src="resources/images/course-software.jpg" alt="Apple computer on desk with lamp" />
+      <div class="md-img">
+        <img src="resources/images/course-software.jpg" alt="Apple computer on desk with lamp" />
+      </div>
       <div class="learn-box">
         <span class="title">Software engineering</span>
         <p class="learn-course">Courses</p>
@@ -106,8 +123,10 @@
     </div>
       <span class="mobile-title">Computer art</span>
     <div class="learn-img">
-      <img src="resources/images/course-computer-art.jpg" alt="Hand holding smart phone" />
-      <div class="learn-box">
+      <div class="md-img">
+        <img src="resources/images/course-computer-art.jpg" alt="Hand holding smart phone" />
+      </div>
+        <div class="learn-box">
         <span class="title">Computer art</span>
         <p class="learn-course">Courses</p>
         <p class="text" role="complementary">Imaging & Design Web Design, Motion Graphics & Visual Effects,
@@ -117,8 +136,10 @@
 
       <span class="mobile-title">Design</span>
     <div class="learn-img">
-      <img src="resources/images/course-design.jpg" alt="Person holding antique camera" />
-      <div class="learn-box">
+      <div class="md-img">
+        <img src="resources/images/course-design.jpg" alt="Person holding antique camera" />
+      </div>
+        <div class="learn-box">
         <span class="title">Design</span>
         <p class="learn-course">Courses</p>
         <p class="text" role="complementary">User Experience Design, User Research, Visual Design</p>
@@ -127,8 +148,10 @@
 
     <span class="mobile-title">Data</span>
     <div class="learn-img">
-      <img src="resources/images/course-data.jpg" alt="Open laptop on glass desk" />
-      <div class="learn-box">
+      <div class="md-img">
+        <img src="resources/images/course-data.jpg" alt="Open laptop on glass desk" />
+      </div>
+        <div class="learn-box">
         <span class="title">Data</span>
         <p class="learn-course">Courses</p>
         <p class="text" role="complementary">Data Science, Big Data, SQL, Data Visualization</p>
@@ -137,8 +160,10 @@
 
     <span class="mobile-title">Business</span>
     <div class="learn-img">
-      <img src="resources/images/course-business.jpg" alt="Chess set with wood pieces" />
-      <div class="learn-box">
+      <div class="md-img">
+        <img src="resources/images/course-business.jpg" alt="Chess set with wood pieces" />
+      </div>
+        <div class="learn-box">
         <span class="title">Business</span>
         <p class="learn-course">Courses</p>
         <p class="text" role="complementary">Product Development, Business Development, Startup</p>
@@ -147,8 +172,10 @@
 
     <span class="mobile-title">Marketing</span>
     <div class="learn-img">
-      <img src="resources/images/course-marketing.jpg" alt="Smart watch on person's wrist" />
-      <div class="learn-box">
+      <div class="md-img">
+        <img src="resources/images/course-marketing.jpg" alt="Smart watch on person's wrist" />
+      </div>
+        <div class="learn-box">
         <span class="title">Marketing</span>
         <p class="learn-course">Courses</p>
         <p class="text" role="complementary">Analytics, Content Marketing, Mobile Marketing</p>
@@ -167,12 +194,12 @@
     </div>
     <div class="thesis-container">
       <div class="column-main">
-        <div class="video-container">
+        <div class="large-display">
           <video autoplay muted loop>
             <source src="resources/videos/thesis.mp4" type="video/mp4" />
           </video>
         </div>
-        <span class="title">Reimagine urban</span>
+        <span class="lg-title">Reimagine urban</span>
         <p class="text" role="complementary">"Dicunt denique ex nec, an quod accusamus sed. Ne quo
                   dicant fuisset officiis. Mel impetus oblique ex. Doming constituto his
                 ea, duis ornatus omittam usu et, vel at quot imperdiet. Stet autem
@@ -182,8 +209,10 @@
     <div class="column-side">
       <div class="thesis-side">
       <div class="small-box fisma">
-        <img src="resources/images/thesis-fisma.jpg" alt="Student sketching and designing at desk" />
-          <div class="box-text">
+        <div class="side-img">
+          <img src="resources/images/thesis-fisma.jpg" alt="Student sketching and designing at desk" />
+        </div>
+        <div class="box-text">
             <span class="title">Fisma: Design and Prototype</span>
             <span class="text" role="complementary">Designer showcase of new prototype product</span>
           </div>
@@ -192,8 +221,10 @@
 
     <div class="thesis-side">
       <div class="small-box">
-        <img src="resources/images/thesis-now-and-then.jpg" alt="Picture of Empire State Building in New York" />
-          <div class="box-text">
+        <div class="side-img">
+          <img src="resources/images/thesis-now-and-then.jpg" alt="Picture of Empire State Building in New York" />
+        </div>
+        <div class="box-text">
             <span class="title">Now and Then</span>
             <span class="text" role="complementary">Research study about New York</span>
           </div>
@@ -216,10 +247,12 @@
         <i class="fa fa-instagram"><a href="#" target="_blank"></a></i>
       </span>
     </div>
+    <nav>
       <ul class="footer-bar" role="presentation" aria-label="navigation to collage Terms and Policies">
         <li class="footernav"><a href="#" target="_blank">Terms</a></li>
         <li class="footernav"><a href="#" target="_blank">Privacy</a></li>
       </ul>
+    </nav>
   </footer>
 
 </html>
