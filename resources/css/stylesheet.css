@@ -18,22 +18,19 @@ strong{
   color: #404040;
 }
 
+h1{
+  font-size: 2.5rem;
+}
+
 .title{
   font-weight: 500;
   font-size: 2rem;
   font-weight: bolder;
-  letter-spacing: 0.05em;
 }
 
 .text{
   margin-top: .5rem;
-  line-height: 2rem;
-  margin-left: 2rem;
-}
-
-.large-display{
-  width: 70%;
-  height: auto;
+  line-height: .5rem;
 }
 
 img{
@@ -41,15 +38,12 @@ img{
   height: auto;
 }
 
-.md-img{
-  width: 100%;
-  height: auto;
+.img-desktop{
+  max-width: 85%;
+  margin-bottom: 1rem;
+
 }
 
-.side-img{
-  width: 35%;
-  height: auto;
-}
 
 /* Header Section*/
 
@@ -129,7 +123,6 @@ banner{
   display: flex;
   background-color: #E0E0E0;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .ban-contain{
@@ -142,7 +135,6 @@ banner{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 40%;
   margin-left: 2.5rem;
 }
 
@@ -177,16 +169,10 @@ banner{
 @media only screen and (max-width: 600px){
     /* ruleset for 320px - 480px */
 
-    banner{
+    .ban-contain{
       display: flex;
       flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-
-    banner img{
-     width: 100%;
-     height: auto;
+      align-items: flex-start;
     }
 
     .banner-text{
@@ -197,22 +183,17 @@ banner{
 
     .banner-title{
       margin-top: 1.5rem;
-      font-weight: 700;
-      font-size: 3rem;
       line-height: 3rem;
     }
 
     .banner-text p{
-      font-weight: 500;
-      font-size: 1.5rem;
       margin-top: 1.5rem;
       line-height: 2rem;
     }
 
     .banner-button{
-      background-color: #404040;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       margin-top: 2rem;
       align-self: center;
     }
@@ -222,30 +203,21 @@ banner{
 
 .about{
   display: flex;
-  align-items: flex-start;
-  width: 100%;
-  background-color: #F7F7F7;
+  padding: 2rem 1.5rem;
 }
 
 .column-main{
   display: flex;
   flex-direction: column;
-  margin-right: 1.5rem;
-  padding: 2.5rem 1.5rem 4rem 1.5rem;
-}
-
-.lg-title{
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: 0.05em;
-  margin-top: 2rem;
+  align-items: flex-start;
+  padding left: 2.5rem;
+  max-width: 60%;
 }
 
 .text{
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   line-height: 2rem;
-  width: 70%;
-  margin-left: 0rem;
 }
 
 .column-main p{
@@ -274,29 +246,18 @@ banner{
   flex-direction: column;
   align-items: flex-start;
   margin-left: 1.5rem;
-  padding: 2.5rem 1.5rem 4rem 1.5rem;
 }
 
 .small-box{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin:
 }
 
-.small-box img{
-  padding: 0rem 4rem 1rem 1rem;
-}
 
 .box-text{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 2rem;
-}
-
-.readmore{
-  margin-top: 1.5rem;
+  max-width: 50%;
 }
 
 .readmore a{
@@ -311,10 +272,6 @@ banner{
   background-color: #E0E0E0;
 }
 
-.mobile-img{
-  display: none;
-}
-
 .img-mobile{
   display: none;
 }
@@ -327,14 +284,13 @@ banner{
     .column-side{
       display: flex;
       flex-direction: column;
-      align-items: center;
       width: 100%;
     }
 
       .small-box{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       margin-top: 2rem;
     }
 
@@ -349,8 +305,8 @@ banner{
     }
 
     .box-text{
-      width: 100%;
-      margin-bottom: 3rem;
+      margin-left: .5rem;
+      max-width: 70%;
     }
   }
 
@@ -470,17 +426,16 @@ h1{
       display: none;
     }
 
-    .thesis{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
     .thesis .video-mobile{
       display: flex;
       flex-direction: column;
-      width: 100%;
+      padding-bottom: 3rem;
+    }
+
+    .thesis video{
+      max-width: 90%;
       height: auto;
+      align-self: center;
     }
   }
 
@@ -529,7 +484,6 @@ footer i:hover{
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 8rem 1.5rem 4rem 1.5rem;
     }
 
       .footer-bar{
@@ -538,7 +492,6 @@ footer i:hover{
 
     footer i{
       margin-top: 1rem;
-      padding-bottom: 4rem;
     }
 
   }
